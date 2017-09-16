@@ -2,14 +2,14 @@ import random
 import string
 import time
 
-passwordvalue = input("Enter a password(lowercase and numbers)")
+passwordvalue = input("Enter a password(Leters/Numbers)")
 t0 = time.time()
 passwordguess = ""
 guesses = 0
-chars=string.ascii_lowercase+string.digits
+chars=string.ascii_lowercase+string.ascii_uppercase+string.digits
 charslength=len(chars)
 
-def passwordset(size=len(passwordvalue), chars=string.ascii_lowercase+string.digits):
+def passwordset(size=len(passwordvalue), chars=string.ascii_lowercase+string.ascii_uppercase+string.digits):
     return "".join(random.choice(chars) for _ in range(size))
 
 s = set()

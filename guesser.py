@@ -30,3 +30,4 @@ while passwordguess != passwordvalue:
 print(guesses, "guesses")
 t1 = time.time()
 print (t1-t0)
+input("")
